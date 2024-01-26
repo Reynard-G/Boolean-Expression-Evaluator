@@ -27,7 +27,8 @@ func evaluateExpression(_ expression: String) -> Bool {
         }
     }
     
-    while let operatorType = operators.popLast() {
+    while !operators.isEmpty {
+        let operatorType = operators.removeFirst()
         evaluateTopOperator(&stack, operatorType)
     }
     
@@ -44,8 +45,8 @@ func evaluateTopOperator(_ stack: inout [Bool], _ operatorType: Operator) {
     case .or:
         stack.append(leftOperand! || rightOperand!)
     case .not:
-        let operand = stack.popLast() ?? false
-        stack.append(!operand)
+        let operand = stack.removeFirst()
+        stack.insert(!operand, at: 0)
     }
 }
 
