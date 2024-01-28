@@ -164,7 +164,7 @@ while let input = readLine() {
         "and": "∧",
         "or": "∨",
         "xor": "⊕",
-        "imply": "→",
+        "implies": "→",
         "=": "=",
         "!=": "≠",
         "not": "¬",
