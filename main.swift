@@ -23,6 +23,7 @@ let operatorDictionary: [String : Character] = [
     "false": "⊥"
 ]
 
+// GPTed
 func evaluateExpression(_ expression: String) -> Bool {
     var stack = [Bool]()
     var operators = [Operator]()
@@ -145,6 +146,7 @@ func generateTruthTable(_ formula: String, result: Bool) {
     print(headerRow)
 }
 
+// GPTed
 func replaceTextWithDictionary(input: String, dictionary: [String: String]) -> String {
     var replacedString = input
 
