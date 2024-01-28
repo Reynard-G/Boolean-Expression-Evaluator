@@ -16,6 +16,6 @@ RESULT: TRUE
 
 ## Features
 
-* Supports boolean operators `and` and `or`
+* Supports boolean operators `and`, `or`, `xor`, `equals`, `notequals`, `implies`
 * Supports negation of results with the `not` operator
 * Supports evaluation of boolean expressions with parenthesis for grouping and precedence
